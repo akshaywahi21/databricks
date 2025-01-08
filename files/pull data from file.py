@@ -27,5 +27,5 @@ df = spark.read.format("snowflake") \
     .options(**sfOptions) \
     .option("query", "SELECT * FROM CATALOG_PAGE LIMIT 10") \
     .load()
-
+## df to show data
 display(df)
